@@ -8,7 +8,18 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.brand img{
+  width: 70px;
+  height: 50px;
+  float: left;
+}
+div.brand {
+    float: left;
+    margin-right: -5px;
+}
+nav {
+    /*float: left;*/
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -30,7 +41,8 @@ body {
 }
 
 .active {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
+      background-color: #001DBD;
   color: white;
 }
 
@@ -41,19 +53,30 @@ body {
   padding: 15px 30px;
   margin: 15px;
   border-radius: .25rem;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
-.column-4{
-  float: left;
-  width: 25%;
+    input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
-.column-8{
-  float: left;
-  width: 75%;
+ 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.column{
-  float: left;
-  width: 50%;
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -81,6 +104,9 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
+  <div class="brand">
+    <img src="logo.png">
+  </div>
   <a href="index.html">Trang chủ</a>
   <a href="GioiThieu.html">Giới Thiệu</a>
   <a href="ThongKe.html">Thống Kê</a>
@@ -91,16 +117,24 @@ body {
   </a>
 </div>
 
+
 <div class="container">
-  <div class="wrap-form">
-    <form>
-      <input type="text" name="" placeholder="Tên">
-      <input type="tex" name="" placeholder="Email">
-      <input type="number" name="" placeholder="Số điện thoại">
-      <input type="text" name="" placeholder="Địa chỉ">
-      <textarea name="message" rows="10" cols="30">Nhập nội dung</textarea>
+    <h2>Form liên hệ</h2>
+    <form action="/action_page.php">
+        <label for="fname">Họ Và Tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên...">
+ 
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="email" placeholder="Nhập email...">
+ 
+        <label for="country">Số Điện Thoại</label>
+        <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại...">
+ 
+        <label for="address">Địa Chỉ</label>
+        <input type="text" id="address" name="address" placeholder="Nhập địa chỉ...">
+ 
+        <input type="submit" value="Gửi">
     </form>
-  </div>
 </div>
 
 <script>

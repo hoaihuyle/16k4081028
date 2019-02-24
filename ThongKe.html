@@ -8,7 +8,15 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.brand img{
+  width: 70px;
+  height: 50px;
+  float: left;
+}
+div.brand {
+    float: left;
+    margin-right: -5px;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -28,9 +36,15 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+.container{
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: .25rem;
+  /*border: 1px solid black;*/
+}
 .active {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
+      background-color: #001DBD;
   color: white;
 }
 
@@ -78,55 +92,62 @@ tr:nth-child(even) {
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" >Trang chủ</a>
+  <div class="brand">
+    <img src="logo.png">
+  </div>
+  <a href="index.html">Trang chủ</a>
   <a href="GioiThieu.html">Giới Thiệu</a>
   <a href="ThongKe.html" class="active">Thống Kê</a>
   <a href="DieuTra.html">Điều Tra</a>
-  <a href="LienHe.html">Liên Hệ</a>
+  <a href="LienHe.html" >Liên Hệ</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-<h2>HTML Table</h2>
+<div class="container">
+  <h2>DANH SÁCH BÀI VIẾT</h2>
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Tên Công ty</th>
+    <th style="text-align: center;padding: 5px;">Khu vực</th>
+    <th>Tiêu đề</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>EAGLE TOURIST</td>
+    <td>Thừa Thiên - Huế</td>
+    <td>EAGLE TOURIST TUYỂN DỤNG NHIỀU VỊ TRÍ HẤP DẪN</td>
   </tr>
   <tr>
     <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
+    <td>Thừa Thiên - Huế</td>
     <td>Mexico</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>TEACHER TRAINEE</td>
+    <td>Hồ Chí Minh</td>
+    <td>TRUNG TÂM ANH NGỮ VÀ KĨ NĂNG PICTURE FUTURE GIỚI THIỆU Chương trình Giáo viên tập sự dành cho các bạn sinh viên đang học chuyên ngành tiếng Anh tại Huế</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    
+    <td>FASTGO</td>
+    <td>Thừa Thiên - Huế</td>
+    <td>CTCP FASTGO VIỆT NAM cần tuyển nhân viên chính thức các vị trí: Marketing & Admin; Nhân viên kinh doanh. </td>
+    
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <td>BIG C</td>
+    <td>Thừa Thiên - Huế</td>
+    <td>TUYỂN DỤNG LƯƠNG CAO TẠI BIG C</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>ĐIỆN MÁY XANH</td>
+    <td>Thừa Thiên - Huế</td>
+    <td>ĐIỆN MÁY XANH TUYỂN DỤNG CỘNG TÁC VIÊN GIAO HÀNG LẮP ĐẶT</td>
   </tr>
 </table>
+</div>
 
 <script>
 function myFunction() {

@@ -8,7 +8,15 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.brand img{
+  width: 70px;
+  height: 50px;
+  float: left;
+}
+div.brand {
+    float: left;
+    margin-right: -5px;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -30,14 +38,33 @@ body {
 }
 
 .active {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
+      background-color: #001DBD;
   color: white;
 }
 
 .topnav .icon {
   display: none;
 }
-
+.container{
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: .25rem;
+  /*border: 1px solid black;*/
+}
+.space-wrap{
+	border: 1px solid black;
+	padding: 15px;
+	align-content: center;
+	text-align: center;
+	margin: 15px;
+	text-transform: uppercase;
+	/*position: absolute;*/
+}
+.space-wrap img{
+	width: 50%;
+	/*position: relative;*/
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -64,17 +91,24 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
+  <div class="brand">
+    <img src="logo.png">
+  </div>
   <a href="index.html" class="active">Trang chủ</a>
   <a href="GioiThieu.html">Giới Thiệu</a>
   <a href="ThongKe.html">Thống Kê</a>
   <a href="DieuTra.html">Điều Tra</a>
-  <a href="LienHe.html">Liên Hệ</a>
+  <a href="LienHe.html" >Liên Hệ</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
-
+<div class="container">
+	<div class="space-wrap">
+		<h1>16k4081028-Trang chủ</h1>
+		<img src="logo.png" >
+	</div>
+</div>
 
 <script>
 function myFunction() {
